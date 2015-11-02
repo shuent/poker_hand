@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Poker hand</title>
+</head>
+<body>
+<H1>
+	Let's judge poker hand!
+</H1>
+<form method="post" action="/">
+    <input type="text" name="card"><input type="submit" value="judge">
+</form>
+<h4>Your input: <%= @card%></h4>
+<h2>Your hand is ... <%= @judge %>!</h2>
+<p>
+Put poker hands in the box. Each card must be splited with space.<br>
+Example: S8 S7 H6 H5 S4 <br>
+			#=> straight
+</p>
+</body>
+</html>
